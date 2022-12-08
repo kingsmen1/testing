@@ -14,7 +14,7 @@ app.get("/get", (req, res) => {
 });
 const port = process.env.PORT || 8000;
 
-app.listen(port, "216.24.57.1", (err) => {
+app.listen(port, '0.0.0.0', (err) => {
   if (err) throw err;
   console.log(`App listening on ${port}`);
 });

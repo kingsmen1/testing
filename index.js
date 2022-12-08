@@ -13,6 +13,8 @@ app.get("/get", (req, res) => {
   res.send("<h1>hello</h1>");
 });
 const port = process.env.PORT || 8000;
-app.listen(port, () => {
+
+app.listen(port, "0.0.0.0", (err) => {
+  if (err) throw err;
   console.log(`App listening on ${port}`);
 });
